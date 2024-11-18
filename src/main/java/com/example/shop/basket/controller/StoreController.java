@@ -14,17 +14,18 @@ import java.util.Set;
 public class StoreController {
 
     private final StoreService storeService;
+
     public StoreController(StoreService storeService) {
-    this.storeService = storeService;
+        this.storeService = storeService;
     }
 
     @GetMapping("add")
-    public Set<Integer> add(@RequestParam List<Integer> basket){
+    public Set<Integer> add(@RequestParam List<Integer> basket) {
         return storeService.add(basket);
     }
 
     @GetMapping("get")
-    public Set<Integer> get(){
+    public Set<Integer> get() {
         return storeService.get();
     }
 }
