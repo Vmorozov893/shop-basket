@@ -24,5 +24,4 @@ public class StoreServiceImpl implements StoreService {
         return this.basket.get();
     }
 
-
 }

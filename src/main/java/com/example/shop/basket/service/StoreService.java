@@ -8,4 +8,5 @@ public interface StoreService {
     Set<Integer> add(List<Integer> basket);
 
     Set<Integer> get();
+
 }
